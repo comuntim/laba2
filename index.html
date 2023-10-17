@@ -8,8 +8,8 @@
 <body>
     <div class="login-form">
         <h2>Форма аутентификации</h2>
-        <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
-            <label for="username">Логин (admin):</label>
+        <! -- <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">>   
+	<label for="username">Логин (admin):</label>
         <form id="loginForm">
             
             <input type="text" id="username" name="username" required><br>
@@ -35,7 +35,7 @@
             // Здесь вы можете добавить логику проверки логина и пароля
             // Если аутентификация успешна, перейдите на index.html
             if (username === 'admin' && password === 'admin') {
-                window.location.href = 'index2.html';
+                window.location.href = 'startup.html';
             } else {
                 alert('Ошибка аутентификации. Пожалуйста, проверьте логин и пароль.');
             }
