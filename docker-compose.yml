@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html/
+      - ./html/styles:/usr/share/nginx/html/styles/
+      - ./html/images:/usr/share/nginx/html/images/
+    networks:
+      - my_network
+networks:
+  my_network:
+
